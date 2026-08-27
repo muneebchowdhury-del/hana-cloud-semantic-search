@@ -1,0 +1,45 @@
+QUERY_ID,QUERY_TYPE,QUERY,EXPECTED_ISSUE_FAMILY
+Q001,Exact Keyword,procurement application access denied,PROCUREMENT_AUTH
+Q002,Exact Keyword,HTTP 401 authorization error,HTTP_401
+Q003,Exact Keyword,supplier invoice posting error,INVOICE_POSTING
+Q004,Exact Keyword,integration flow cannot deliver messages,INTERFACE_FAILURE
+Q005,Exact Keyword,report execution extremely slow,SLOW_REPORT
+Q006,Exact Keyword,dashboard missing recent data,MISSING_REPORT_DATA
+Q007,Exact Keyword,duplicate customer master records,MASTER_DATA_DUPLICATE
+Q008,Exact Keyword,purchase order approval blocked,PO_APPROVAL
+
+Q009,Synonym,employee lacks purchasing permission,PROCUREMENT_AUTH
+Q010,Synonym,service says user is unauthorized after signing in,HTTP_401
+Q011,Synonym,vendor bill cannot be recorded in accounting,INVOICE_POSTING
+Q012,Synonym,system interface cannot transmit information,INTERFACE_FAILURE
+Q013,Synonym,analytics output takes a very long time,SLOW_REPORT
+Q014,Synonym,business dashboard does not contain newest records,MISSING_REPORT_DATA
+Q015,Synonym,same customer has been created more than once,MASTER_DATA_DUPLICATE
+Q016,Synonym,supervisor cannot release purchasing order,PO_APPROVAL
+
+Q017,Paraphrase,staff member lacks permission to use the buying system,PROCUREMENT_AUTH
+Q018,Paraphrase,login works but the application refuses to let the person in,HTTP_401
+Q019,Paraphrase,the company received an invoice but finance cannot complete the posting,INVOICE_POSTING
+Q020,Paraphrase,data leaves the source but never reaches the receiving application,INTERFACE_FAILURE
+Q021,Paraphrase,a report that used to finish quickly now requires several minutes,SLOW_REPORT
+Q022,Paraphrase,older dashboard information appears but recently loaded transactions are absent,MISSING_REPORT_DATA
+Q023,Paraphrase,two business partner entries represent one customer,MASTER_DATA_DUPLICATE
+Q024,Paraphrase,the manager sees the order waiting but cannot complete the approval step,PO_APPROVAL
+
+Q025,Natural Language,I am trying to use procurement but the application will not let me in,PROCUREMENT_AUTH
+Q026,Natural Language,I successfully logged in but then received an unauthorized message,HTTP_401
+Q027,Natural Language,why can the finance team not save this supplier invoice,INVOICE_POSTING
+Q028,Natural Language,why are messages between our two connected applications not arriving,INTERFACE_FAILURE
+Q029,Natural Language,why has our closing report suddenly become so slow,SLOW_REPORT
+Q030,Natural Language,why are yesterday's transactions missing from the analytics dashboard,MISSING_REPORT_DATA
+Q031,Natural Language,why do we have several customer records for the same company,MASTER_DATA_DUPLICATE
+Q032,Natural Language,why is the manager unable to approve the purchase order,PO_APPROVAL
+
+Q033,Exact Identifier,HTTP 401,HTTP_401
+Q034,Exact Identifier,SQL error 257,SQL_ERROR_257
+Q035,Exact Identifier,error code 257,SQL_ERROR_257
+Q036,Exact Identifier,401 unauthorized,HTTP_401
+Q037,Exact Keyword,HANA connection fails,DB_CONNECTION
+Q038,Synonym,application cannot establish database connectivity,DB_CONNECTION
+Q039,Paraphrase,the program is running but cannot reach the HANA database,DB_CONNECTION
+Q040,Natural Language,why does the application keep losing its connection to the database,DB_CONNECTION

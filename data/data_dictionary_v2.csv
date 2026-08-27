@@ -1,0 +1,10 @@
+FIELD,TYPE,DESCRIPTION
+TICKET_ID,Integer,Unique identifier for each synthetic support ticket.
+TITLE,Text,Short summary of the reported issue.
+DESCRIPTION,Text,Main searchable problem description.
+PRODUCT_AREA,Text,SAP or business product area related to the issue.
+CATEGORY,Text,High-level issue category.
+PRIORITY,Text,"Low, Medium, High or Critical priority."
+CREATED_AT,Date,Synthetic ticket creation date.
+RESOLUTION_TEXT,Text,Synthetic resolution associated with the issue.
+ISSUE_FAMILY,Text,Controlled ground-truth label used for retrieval evaluation.

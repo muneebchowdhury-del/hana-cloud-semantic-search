@@ -1,0 +1,81 @@
+QUERY_ID,QUERY_TYPE,QUERY,EXPECTED_ISSUE_FAMILY,METHOD,PRECISION_AT_5,SUCCESS_AT_5,FIRST_RELEVANT_RANK,RECIPROCAL_RANK,DB_QUERY_TIME_MS,EMBEDDING_TIME_MS
+Q001,Exact Keyword,procurement application access denied,PROCUREMENT_AUTH,Semantic,1.0,1,1.0,1.0,27.295100037008524,24.340300005860627
+Q001,Exact Keyword,procurement application access denied,PROCUREMENT_AUTH,Keyword,1.0,1,1.0,1.0,42.6751000341028,0.0
+Q002,Exact Keyword,HTTP 401 authorization error,HTTP_401,Semantic,1.0,1,1.0,1.0,13.807500014081597,8.400299993809313
+Q002,Exact Keyword,HTTP 401 authorization error,HTTP_401,Keyword,1.0,1,1.0,1.0,20.37039998685941,0.0
+Q003,Exact Keyword,supplier invoice posting error,INVOICE_POSTING,Semantic,1.0,1,1.0,1.0,10.658900020644069,10.542800009716302
+Q003,Exact Keyword,supplier invoice posting error,INVOICE_POSTING,Keyword,1.0,1,1.0,1.0,14.675599988549948,0.0
+Q004,Exact Keyword,integration flow cannot deliver messages,INTERFACE_FAILURE,Semantic,1.0,1,1.0,1.0,10.948800016194582,9.628000028897077
+Q004,Exact Keyword,integration flow cannot deliver messages,INTERFACE_FAILURE,Keyword,1.0,1,1.0,1.0,12.924199982080609,0.0
+Q005,Exact Keyword,report execution extremely slow,SLOW_REPORT,Semantic,1.0,1,1.0,1.0,11.322100006509572,8.808500017039478
+Q005,Exact Keyword,report execution extremely slow,SLOW_REPORT,Keyword,1.0,1,1.0,1.0,13.770500023383647,0.0
+Q006,Exact Keyword,dashboard missing recent data,MISSING_REPORT_DATA,Semantic,1.0,1,1.0,1.0,13.46640003612265,9.128700010478497
+Q006,Exact Keyword,dashboard missing recent data,MISSING_REPORT_DATA,Keyword,1.0,1,1.0,1.0,12.681499996688217,0.0
+Q007,Exact Keyword,duplicate customer master records,MASTER_DATA_DUPLICATE,Semantic,1.0,1,1.0,1.0,11.609700042754412,7.686299970373511
+Q007,Exact Keyword,duplicate customer master records,MASTER_DATA_DUPLICATE,Keyword,1.0,1,1.0,1.0,12.369300005957484,0.0
+Q008,Exact Keyword,purchase order approval blocked,PO_APPROVAL,Semantic,1.0,1,1.0,1.0,10.692199983168393,9.402900002896786
+Q008,Exact Keyword,purchase order approval blocked,PO_APPROVAL,Keyword,1.0,1,1.0,1.0,12.435600045137107,0.0
+Q009,Synonym,employee lacks purchasing permission,PROCUREMENT_AUTH,Semantic,1.0,1,1.0,1.0,11.643500009085983,7.8508000005967915
+Q009,Synonym,employee lacks purchasing permission,PROCUREMENT_AUTH,Keyword,1.0,1,1.0,1.0,13.547300011850893,0.0
+Q010,Synonym,service says user is unauthorized after signing in,HTTP_401,Semantic,1.0,1,1.0,1.0,10.96519996644929,8.9725999860093
+Q010,Synonym,service says user is unauthorized after signing in,HTTP_401,Keyword,1.0,1,1.0,1.0,48.58659999445081,0.0
+Q011,Synonym,vendor bill cannot be recorded in accounting,INVOICE_POSTING,Semantic,1.0,1,1.0,1.0,10.325699986424297,11.710000049788505
+Q011,Synonym,vendor bill cannot be recorded in accounting,INVOICE_POSTING,Keyword,1.0,1,1.0,1.0,12.75670004542917,0.0
+Q012,Synonym,system interface cannot transmit information,INTERFACE_FAILURE,Semantic,1.0,1,1.0,1.0,11.652100016362965,14.265100006014109
+Q012,Synonym,system interface cannot transmit information,INTERFACE_FAILURE,Keyword,1.0,1,1.0,1.0,11.159999994561076,0.0
+Q013,Synonym,analytics output takes a very long time,SLOW_REPORT,Semantic,1.0,1,1.0,1.0,11.255999968852848,10.812200023792684
+Q013,Synonym,analytics output takes a very long time,SLOW_REPORT,Keyword,1.0,1,1.0,1.0,13.920800003688782,0.0
+Q014,Synonym,business dashboard does not contain newest records,MISSING_REPORT_DATA,Semantic,1.0,1,1.0,1.0,11.006399989128113,9.549899958074093
+Q014,Synonym,business dashboard does not contain newest records,MISSING_REPORT_DATA,Keyword,0.6,1,1.0,1.0,13.003300002310425,0.0
+Q015,Synonym,same customer has been created more than once,MASTER_DATA_DUPLICATE,Semantic,1.0,1,1.0,1.0,10.453799972310662,8.885800023563206
+Q015,Synonym,same customer has been created more than once,MASTER_DATA_DUPLICATE,Keyword,1.0,1,1.0,1.0,52.136999962385744,0.0
+Q016,Synonym,supervisor cannot release purchasing order,PO_APPROVAL,Semantic,1.0,1,1.0,1.0,10.698399972170591,10.869499994441867
+Q016,Synonym,supervisor cannot release purchasing order,PO_APPROVAL,Keyword,1.0,1,1.0,1.0,12.561899959109724,0.0
+Q017,Paraphrase,staff member lacks permission to use the buying system,PROCUREMENT_AUTH,Semantic,1.0,1,1.0,1.0,9.829299990087748,8.60199995804578
+Q017,Paraphrase,staff member lacks permission to use the buying system,PROCUREMENT_AUTH,Keyword,0.0,0,,0.0,12.870199978351593,0.0
+Q018,Paraphrase,login works but the application refuses to let the person in,HTTP_401,Semantic,0.6,1,1.0,1.0,11.520100000780076,15.236300008837134
+Q018,Paraphrase,login works but the application refuses to let the person in,HTTP_401,Keyword,0.2,1,5.0,0.2,11.745300027541816,0.0
+Q019,Paraphrase,the company received an invoice but finance cannot complete the posting,INVOICE_POSTING,Semantic,1.0,1,1.0,1.0,11.031500005628914,9.938400005921721
+Q019,Paraphrase,the company received an invoice but finance cannot complete the posting,INVOICE_POSTING,Keyword,1.0,1,1.0,1.0,14.640100009273738,0.0
+Q020,Paraphrase,data leaves the source but never reaches the receiving application,INTERFACE_FAILURE,Semantic,1.0,1,1.0,1.0,10.789799969643354,10.585699987132102
+Q020,Paraphrase,data leaves the source but never reaches the receiving application,INTERFACE_FAILURE,Keyword,0.0,0,,0.0,13.858299993444234,0.0
+Q021,Paraphrase,a report that used to finish quickly now requires several minutes,SLOW_REPORT,Semantic,1.0,1,1.0,1.0,11.07050001155585,10.102700034622103
+Q021,Paraphrase,a report that used to finish quickly now requires several minutes,SLOW_REPORT,Keyword,1.0,1,1.0,1.0,55.92040001647547,0.0
+Q022,Paraphrase,older dashboard information appears but recently loaded transactions are absent,MISSING_REPORT_DATA,Semantic,1.0,1,1.0,1.0,11.88549998914823,10.614700033329427
+Q022,Paraphrase,older dashboard information appears but recently loaded transactions are absent,MISSING_REPORT_DATA,Keyword,1.0,1,1.0,1.0,15.920999983791262,0.0
+Q023,Paraphrase,two business partner entries represent one customer,MASTER_DATA_DUPLICATE,Semantic,1.0,1,1.0,1.0,11.323200014885515,9.300499979872257
+Q023,Paraphrase,two business partner entries represent one customer,MASTER_DATA_DUPLICATE,Keyword,1.0,1,1.0,1.0,13.028900022618473,0.0
+Q024,Paraphrase,the manager sees the order waiting but cannot complete the approval step,PO_APPROVAL,Semantic,1.0,1,1.0,1.0,22.438300016801804,9.49720002245158
+Q024,Paraphrase,the manager sees the order waiting but cannot complete the approval step,PO_APPROVAL,Keyword,1.0,1,1.0,1.0,12.022799986880273,0.0
+Q025,Natural Language,I am trying to use procurement but the application will not let me in,PROCUREMENT_AUTH,Semantic,1.0,1,1.0,1.0,11.422200012020767,10.463499987963587
+Q025,Natural Language,I am trying to use procurement but the application will not let me in,PROCUREMENT_AUTH,Keyword,1.0,1,1.0,1.0,17.08739995956421,0.0
+Q026,Natural Language,I successfully logged in but then received an unauthorized message,HTTP_401,Semantic,1.0,1,1.0,1.0,11.013699986506253,10.533299995586276
+Q026,Natural Language,I successfully logged in but then received an unauthorized message,HTTP_401,Keyword,0.6,1,1.0,1.0,11.746999982278794,0.0
+Q027,Natural Language,why can the finance team not save this supplier invoice,INVOICE_POSTING,Semantic,1.0,1,1.0,1.0,10.472599999047816,8.27620003838092
+Q027,Natural Language,why can the finance team not save this supplier invoice,INVOICE_POSTING,Keyword,1.0,1,1.0,1.0,14.853899949230254,0.0
+Q028,Natural Language,why are messages between our two connected applications not arriving,INTERFACE_FAILURE,Semantic,1.0,1,1.0,1.0,11.58019999274984,12.363500020001084
+Q028,Natural Language,why are messages between our two connected applications not arriving,INTERFACE_FAILURE,Keyword,1.0,1,1.0,1.0,13.799400010611862,0.0
+Q029,Natural Language,why has our closing report suddenly become so slow,SLOW_REPORT,Semantic,1.0,1,1.0,1.0,11.069900006987154,10.622400033753365
+Q029,Natural Language,why has our closing report suddenly become so slow,SLOW_REPORT,Keyword,1.0,1,1.0,1.0,57.19550000503659,0.0
+Q030,Natural Language,why are yesterday's transactions missing from the analytics dashboard,MISSING_REPORT_DATA,Semantic,1.0,1,1.0,1.0,11.665600002743304,14.080699998885393
+Q030,Natural Language,why are yesterday's transactions missing from the analytics dashboard,MISSING_REPORT_DATA,Keyword,1.0,1,1.0,1.0,13.598999998066574,0.0
+Q031,Natural Language,why do we have several customer records for the same company,MASTER_DATA_DUPLICATE,Semantic,1.0,1,1.0,1.0,10.792799992486835,10.305100004188716
+Q031,Natural Language,why do we have several customer records for the same company,MASTER_DATA_DUPLICATE,Keyword,1.0,1,1.0,1.0,18.40150001225993,0.0
+Q032,Natural Language,why is the manager unable to approve the purchase order,PO_APPROVAL,Semantic,1.0,1,1.0,1.0,11.2263000337407,9.369000035803765
+Q032,Natural Language,why is the manager unable to approve the purchase order,PO_APPROVAL,Keyword,1.0,1,1.0,1.0,13.533700024709105,0.0
+Q033,Exact Identifier,HTTP 401,HTTP_401,Semantic,1.0,1,1.0,1.0,10.8349000220187,7.909799984190613
+Q033,Exact Identifier,HTTP 401,HTTP_401,Keyword,1.0,1,1.0,1.0,34.41429999656975,0.0
+Q034,Exact Identifier,SQL error 257,SQL_ERROR_257,Semantic,1.0,1,1.0,1.0,10.741000005509704,10.38020005216822
+Q034,Exact Identifier,SQL error 257,SQL_ERROR_257,Keyword,1.0,1,1.0,1.0,41.115500032901764,0.0
+Q035,Exact Identifier,error code 257,SQL_ERROR_257,Semantic,1.0,1,1.0,1.0,12.561699957586825,9.383800032082945
+Q035,Exact Identifier,error code 257,SQL_ERROR_257,Keyword,1.0,1,1.0,1.0,12.73129996843636,0.0
+Q036,Exact Identifier,401 unauthorized,HTTP_401,Semantic,1.0,1,1.0,1.0,10.880100016947836,8.749899978283793
+Q036,Exact Identifier,401 unauthorized,HTTP_401,Keyword,1.0,1,1.0,1.0,10.618999949656427,0.0
+Q037,Exact Keyword,HANA connection fails,DB_CONNECTION,Semantic,1.0,1,1.0,1.0,12.252200045622885,7.6345999841578305
+Q037,Exact Keyword,HANA connection fails,DB_CONNECTION,Keyword,1.0,1,1.0,1.0,11.08090003253892,0.0
+Q038,Synonym,application cannot establish database connectivity,DB_CONNECTION,Semantic,1.0,1,1.0,1.0,10.621799970977008,9.091600019019097
+Q038,Synonym,application cannot establish database connectivity,DB_CONNECTION,Keyword,1.0,1,1.0,1.0,12.436299992259592,0.0
+Q039,Paraphrase,the program is running but cannot reach the HANA database,DB_CONNECTION,Semantic,1.0,1,1.0,1.0,11.36389997554943,9.47180000366643
+Q039,Paraphrase,the program is running but cannot reach the HANA database,DB_CONNECTION,Keyword,1.0,1,1.0,1.0,45.3123000334017,0.0
+Q040,Natural Language,why does the application keep losing its connection to the database,DB_CONNECTION,Semantic,1.0,1,1.0,1.0,12.342599977273494,9.272099996451288
+Q040,Natural Language,why does the application keep losing its connection to the database,DB_CONNECTION,Keyword,1.0,1,1.0,1.0,14.551700034644455,0.0
